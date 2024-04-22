@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Alarm System</h1>
+    <div class="alarm-status">
+      <span id="alarm-status">Armed</span>
+      <button id="alarm-button">Disarm</button>
+    </div>
+    <div class="sensor-status">
+      <div class="sensor">
+        <p>Front Door</p>
+        <span id="front-door-status">Closed</span>
+      </div>
+      <div class="sensor">
+        <p>Window</p>
+        <span id="window-status">Closed</span>
+      </div>
+      <div class="sensor">
+        <p>Motion</p>
+        <span id="motion-status">No Motion</span>
+      </div>
+    </div>
+    <div class="log">
+      <h2>Activity Log</h2>
+      <ul id="activity-log"></ul>
+    </div>
+  </div>
+  <audio id="alarm-sound" src="alarm_sound.mp3."></audio>
+  <script src="script.js"></script>
+</head>
+</html>

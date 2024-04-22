@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Timetable</h1>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="timetable-container" style="display: none;">
+            <h2>Timetable</h2>
+            <form id="timetable-form">
+                <label for="class">Select a class:</label>
+                <select id="class" name="class">
+                    <option value="">Select a class</option>
+                    <option value="FORM 1 B">FORM 1 B</option>
+                    <option value="FORM 1 C">FORM 1 C</option>
+                    <option value="FORM 1 D">FORM 1 D</option>
+                    <option value="FORM 2 B">FORM 2 B</option>
+                    <option value="FORM 2 C">FORM 2 C</option>
+                    <option value="FORM 2 D">FORM 2 D</option>
+                    <option value="FORM 3 B">FORM 3 B</option>
+                    <option value="FORM 3 C">FORM 3 C</option>
+                    <option value="FORM 3 D">FORM 3 D</option>
+                    <option value="FORM 4 B">FORM 4 B</option>
+                    <option value="FORM 4 C">FORM 4 C</option>
+                    <option value="FORM 4 D">FORM 4 D</option>
+                </select>
+                <label for="subject">Select a subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Select a subject</option>
+                    <option value="Maths">Maths</option>
+                    <option value="English">English</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Kiswahili">Kiswahili</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option>
+                    <option value="CRE">CRE</option>
+                    <option value="Business">Business</option>
+                    <option value="Agriculture">Agriculture</option>
+                </select>
+                <label for="days">Select preferred days:</label>
+                <div id="days">
+                    <input type="checkbox" id="monday" name="days[]" value="Monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday" name="days[]" value="Tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="wednesday" name="days[]" value="Wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="thursday" name="days[]" value="Thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday" name="days[]" value="Friday">
+                    <label for="friday">Friday</label>
+                </div>
+                <button type="submit">Book</button>
+            </form>
+            <h3>Timetable:</h3>
+            <table id="timetable">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="download-timetable">Download Timetable</button>
+        </div>
+        <div class="create-timetable-container" style="display: none;">
+            <h2>Create Timetable</h2>
+            <form id="create-timetable-form">
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="day">Day:</label>
+                <input type="text" id="day" name="day" required>
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" required>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+    <?php
+
+    $server = "localhost";
+    $username ="root";
+    $password="";
+    $database="Employee data";
+
+    $conn=new mysqli($server,$username,$password,$database);
+
+        if(!conn){
+            echo "error". conn->error;
+        }
+
+
+        if(isset($_POST['submit'])){
+            $name=$_POST['name'];
+            $password=$_POST['password'];
+            $confirm=$_POST['confirm'];
+
+
+
+        }
+
+    ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <title>Signup</title>
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>signup</h2>
+    <label for="name">username:</label>
+    <input type="text" name="name" id="name" placeholder="username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Enter Password">
+    <label for="confirm"> Confirm Password:</label>
+    <input type="password" name="confirm" id=" confirm password" placeholder="Confirm Password">
+    <input type="submit" name="submit" value="Sig Up">
+</div>
+</body>
+</html>

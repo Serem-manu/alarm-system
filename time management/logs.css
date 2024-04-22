@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ffffff;
+    /* background-color: #3719bd; */
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #eeeeee;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #3719bd ;
+    background-color: #9e8dec;
+}
